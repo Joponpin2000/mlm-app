@@ -1,0 +1,11 @@
+* {
+    font-size: 1rem !important;
+}
+
+.brand-image {
+    opacity: .8;
+}
+
+h3 sup {
+    font-size: 20px;
+}

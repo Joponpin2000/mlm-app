@@ -1,0 +1,41 @@
+.col-lg-8 .col-lg-offset-2 .wow .fadeIn {
+    margin-bottom:15px;
+}
+
+.increased-size {
+    font-size: 2.2rem !important;
+}
+
+.my-form {
+	margin-top: 3px;
+	padding: 7px;
+	border-radius: 3px;
+	max-width: 420px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 51px;
+}
+
+.my-form input {
+	border: none;
+	width: 100%;
+	padding: 25px 20px;
+	padding-right: 128px;
+	font-size: 16px;
+    color: #646464;
+    margin-bottom: 10px;
+}
+
+.my-form .btn.btn-primary {
+	right: 0px;
+	top: 0px;
+	background: #1d99ff;
+	border: none;
+	font-weight: 700;
+	padding: 10px 31px;
+}
+
+.my-form .btn.btn-primary:hover {
+	background-color: #007dea;
+}
