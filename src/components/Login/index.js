@@ -80,7 +80,7 @@ const Login = (props) => {
                                                 </span>
                                             </span>
                                             }{' '}
-                    Create Account
+                    Login
                 </Button>
                                     </form>
                                     <div className="blue-form_question mb-5"><strong>Don't have an account?</strong> <Link to={redirect ? "/signup?redirect=" + redirect : "/signup"} ><span className="text-warning">Register here</span></Link></div>

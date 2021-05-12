@@ -16,6 +16,7 @@ const Home = () => {
     const { products, loading } = productList;
     const [currentPage] = useState(1);
     const [postsPerPage] = useState(8);
+    const [query, setQuery] = useState('');
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -93,7 +94,7 @@ const Home = () => {
                                                 <div className="product-sh">
                                                     <div className="col-sm-6">
                                                         <div className="form-sh">
-                                                            <input type="text" placeholder="Search something you love" />
+                                                            <input type="text" placeholder="Search something you love" name="query" onChange={(e) => setQuery(e.target.value.toLocaleLowerCase())} />
                                                         </div>
                                                     </div>
                                                     <div className="col-sm-3">
@@ -106,7 +107,7 @@ const Home = () => {
                                                         </div>
                                                     </div>
                                                     <div className="col-sm-3">
-                                                        <div className="form-sh"> <Link className="btn" to="/">Search</Link> </div>
+                                                        <div className="form-sh"> <Link className="btn" to={"/search/" + query}>Search</Link> </div>
                                                     </div>
                                                     <p>Or simply<Link to="/"> click here </Link> and get inspired!</p>
                                                 </div>

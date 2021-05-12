@@ -57,9 +57,9 @@ const Cart = (props) => {
                                                                 <Card style={{ 'border': 'none' }}>
                                                                     <Card.Body>
                                                                         <Card.Title>
-                                                                            <Link to={"/product/" + item.product} className="text-dark">
+                                                                            <h5 to={"/product/" + item.productName} className="text-dark">
                                                                                 {item.productName}
-                                                                            </Link>
+                                                                            </h5>
                                                                         </Card.Title>
                                                                         <Card.Text>
                                                                             Price: ${item.productPrice}

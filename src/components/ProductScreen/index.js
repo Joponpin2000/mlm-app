@@ -20,6 +20,7 @@ const ProductScreen = (props) => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(detailsProduct(props.match.params.id))
+        console.log(props.match.params.id)
 
     }, [dispatch, props.match.params.id]);
 
@@ -182,7 +183,6 @@ const ProductScreen = (props) => {
                                                     {
                                                         (product[0].productQty > 0)
                                                         &&
-                                                        
                                                         <Button onClick={handleAddToCart} className="btn btn-success btn-block" >Add to cart</Button>
                                                     }
                                                 </div>

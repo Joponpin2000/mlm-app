@@ -19,6 +19,7 @@ import ProductScreen from './components/ProductScreen';
 import CategoryProducts from './components/CategoryProducts';
 import Cart from './components/Cart';
 import Shipping from './components/Shipping';
+import SearchPage from './components/SearchPage';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/categories/:category" component={CategoryProducts} />
           <Route path="/cart/:id?" component={Cart} />
           <Route exact path="/shipping" component={Shipping} />
+          <Route exact path="/search/:query?" component={SearchPage} />
 
           <UserRoute exact path="/user/dashboard" component={Home} />
           <AdminRoute exact path="/admin/dashboard" component={AdminDashboard} />

@@ -60,7 +60,7 @@ const Header = (props) => {
                                                 {isAuthenticated() && isAuthenticated().role === 0 && (
                                                     <Fragment>
                                                         <li><Link to="/user/dashboard">Dashboard</Link></li>
-                                                        <li><Link to="/cart">Cart</Link></li>
+                                                        <li><Link to="/cart" >Cart <sup><small>{cartItems.length > 0 && cartItems.length}</small></sup></Link></li>
                                                     </Fragment>
                                                 )}
                                                 {isAuthenticated() && isAuthenticated().role === 1 && (
@@ -81,14 +81,6 @@ const Header = (props) => {
                                             <ul>
                                                 <li> <Link data-toggle="modal" data-target="#myModal" to="/"> <span>Change</span> <img src={Flag} alt="" /> </Link> </li>
                                                 <li> <Link to="/"><img className="h-i" src={HelpIcon} alt="" /> Help </Link> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="nav-b hidden-xs">
-                                        <div className="nav-box">
-                                            <ul>
-                                                <li><a href="howitworks.html">How it works</a></li>
-                                                <li><a href="about-us.html">Chamb for Business</a></li>
                                             </ul>
                                         </div>
                                     </div>
